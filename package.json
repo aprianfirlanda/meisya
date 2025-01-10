@@ -2,13 +2,20 @@
   "name": "meisya",
   "version": "1.0.0",
   "type": "module",
-  "source": "src/index.js",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "@heroicons/react": "^2.1.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "use-debounce": "^10.0.4"
   },
   "devDependencies": {
     "microbundle": "^0.15.1"
