@@ -1,14 +1,9 @@
 {
   "name": "meisya",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "react.js component with tailwindcss and daisyui",
+  "main": "index.js",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.module.js",
-  "unpkg": "dist/index.umd.js",
-  "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch"
-  },
   "dependencies": {
     "prop-types": "^15.8.1",
     "@heroicons/react": "^2.1.5",
@@ -17,11 +12,17 @@
     "react-router-dom": "^6.27.0",
     "use-debounce": "^10.0.4"
   },
-  "devDependencies": {
-    "microbundle": "^0.15.1"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aprianfirlanda/meisya.git"
-  }
+  },
+  "author": "Aprian Firlanda Imani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aprianfirlanda/meisya/issues"
+  },
+  "homepage": "https://github.com/aprianfirlanda/meisya#readme"
 }
