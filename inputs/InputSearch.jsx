@@ -1,7 +1,7 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline/index.js';
 import { useSearchParams } from 'react-router-dom';
 
-export default function InputSearch() {
+function InputSearch() {
   const [searchParams, setSearchParams] = useSearchParams();
   const search = searchParams.get('search') || '';
 
@@ -18,3 +18,5 @@ export default function InputSearch() {
     </label>
   );
 }
+
+export default InputSearch;

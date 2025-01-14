@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Button({ label, type = 'button', className, action }) {
+function Button({ label, type = 'button', className, action }) {
   return (
     <button type={type} className={`btn ${className}`} onClick={action}>
       {label}
@@ -14,3 +14,5 @@ Button.propTypes = {
   className: PropTypes.string.isRequired,
   action: PropTypes.func,
 };
+
+export default Button;

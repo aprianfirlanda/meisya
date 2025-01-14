@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Textarea({ id, label, placeholder = '', value, onChange, disabled, errorMessage }) {
+function Textarea({ id, label, placeholder = '', value, onChange, disabled, errorMessage }) {
   return (
     <div className="flex flex-col lg:flex-row items-start">
       <label htmlFor={id} className="label w-44">
@@ -30,3 +30,5 @@ Textarea.propTypes = {
   disabled: PropTypes.bool,
   errorMessage: PropTypes.string,
 };
+
+export default Textarea;

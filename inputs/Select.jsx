@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Select({
+function Select({
   id,
   label,
   placeholder = 'Choose...',
@@ -53,3 +53,5 @@ Select.propTypes = {
   options: PropTypes.arrayOf(PropTypes.shape(option)).isRequired,
   errorMessage: PropTypes.string,
 };
+
+export default Select;

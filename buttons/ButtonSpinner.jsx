@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function ButtonSpinner({
+function ButtonSpinner({
   label,
   type = 'button',
   className,
@@ -30,3 +30,5 @@ ButtonSpinner.propTypes = {
   isProcessing: PropTypes.bool.isRequired,
   processingText: PropTypes.string,
 };
+
+export default ButtonSpinner;

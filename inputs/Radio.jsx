@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Radio({ id, label, value, onChange, disabled, options, errorMessage }) {
+function Radio({ id, label, value, onChange, disabled, options, errorMessage }) {
   return (
     <div className="flex flex-col lg:flex-row items-start">
       <label htmlFor={id} className="label w-44">
@@ -44,3 +44,5 @@ Radio.propTypes = {
   options: PropTypes.arrayOf(PropTypes.shape(option)).isRequired,
   errorMessage: PropTypes.string,
 };
+
+export default Radio;

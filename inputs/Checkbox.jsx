@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Checkbox({ id, label, value, onChange, disabled, errorMessage }) {
+function Checkbox({ id, label, value, onChange, disabled, errorMessage }) {
   return (
     <div className="flex flex-col lg:flex-row items-start">
       <label htmlFor={id} className="label w-44">
@@ -24,3 +24,5 @@ Checkbox.propTypes = {
   disabled: PropTypes.bool,
   errorMessage: PropTypes.string,
 };
+
+export default Checkbox;

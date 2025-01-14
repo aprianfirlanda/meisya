@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { useDebounce } from 'use-debounce';
 import { useEffect, useState } from 'react';
 
-export default function InputSearchDebounce() {
+function InputSearchDebounce() {
   const [search, setSearch] = useState('');
   const [searchDebounce] = useDebounce(search, 700);
   const [searchParams, setSearchParams] = useSearchParams();
@@ -31,3 +31,5 @@ export default function InputSearchDebounce() {
     </label>
   );
 }
+
+export default InputSearchDebounce;

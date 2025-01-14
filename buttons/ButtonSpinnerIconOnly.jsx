@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function ButtonSpinnerIconOnly({
+function ButtonSpinnerIconOnly({
   label,
   type = 'button',
   className,
@@ -37,3 +37,5 @@ ButtonSpinnerIconOnly.propTypes = {
   action: PropTypes.func,
   isProcessing: PropTypes.bool.isRequired,
 };
+
+export default ButtonSpinnerIconOnly;

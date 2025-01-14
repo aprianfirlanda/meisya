@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function ButtonSpinnerIcon({
+function ButtonSpinnerIcon({
   label,
   type = 'button',
   className,
@@ -39,3 +39,5 @@ ButtonSpinnerIcon.propTypes = {
   processingText: PropTypes.string,
   disabled: PropTypes.bool,
 };
+
+export default ButtonSpinnerIcon;

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function ButtonIcon({ label, type = 'button', className, Icon, iconClassName, action }) {
+function ButtonIcon({ label, type = 'button', className, Icon, iconClassName, action }) {
   return (
     <button type={type} className={`btn ${className}`} onClick={action}>
       <Icon className={`inline-block ${iconClassName}`} />
@@ -17,3 +17,5 @@ ButtonIcon.propTypes = {
   iconClassName: PropTypes.string.isRequired,
   action: PropTypes.func,
 };
+
+export default ButtonIcon;

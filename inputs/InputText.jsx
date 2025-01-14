@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function InputText({
+function InputText({
   id,
   label,
   type = 'text',
@@ -41,3 +41,5 @@ InputText.propTypes = {
   disabled: PropTypes.bool,
   errorMessage: PropTypes.string,
 };
+
+export default InputText;
