@@ -1,6 +1,6 @@
 {
   "name": "meisya",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "react.js component with tailwindcss and daisyui",
   "main": "index.js",
   "type": "module",
