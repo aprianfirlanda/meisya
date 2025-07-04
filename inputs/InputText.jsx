@@ -36,7 +36,7 @@ InputText.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string,
   placeholder: PropTypes.string,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   onChange: PropTypes.func.isRequired,
   disabled: PropTypes.bool,
   errorMessage: PropTypes.string,
